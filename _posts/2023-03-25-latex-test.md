@@ -79,7 +79,7 @@ For $\textsf{ALG}$, we can use the same idea. Our greedy rule said to take as mu
 <br/><br/>
 We're super close - we need one more core claim.
 <br/><br/>
-**Claim 3.** For any algorithm $\textsf{SOL}$, the only way to increase $t^\textsf{SOL}$ without increasing the total weight in the bucket is to substitute a higher valued bean in the place of a lower valued bean.
+**Claim 3.** *For any algorithm $\textsf{SOL}$, the only way to increase $t^\textsf{SOL}$ without increasing the total weight in the bucket is to substitute a higher valued bean in the place of a lower valued bean.*
 
 *Proof.* Suppose we have some bean $b_i$ with value $v_i$, and that our solution $\textsf{SOL}$ has taken $a^\textsf{SOL}_i$ pounds of it. Its cost contribution is 
 
