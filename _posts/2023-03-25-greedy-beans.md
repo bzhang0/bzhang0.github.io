@@ -113,7 +113,7 @@ We will write an **exchange** argument for our proof.
 
 *Proof.* Let $\textsf{OPT}$ and $\textsf{ALG}$ be the optimal and greedy solutions, respectively. Again, **Claim 1** allows us to safely assume that all beans with the same value can be "combined" into a **big bean**. This guarantees that the valeus of each **big bean** are unique.
 
-Now, assume for the sake of contradiction that $t^\textsf{OPT}$ is different from $t^\textsf{ALG}$. Since $\textsf{OPT}$ is the optimal solution, it must be that $t^\textsf{OPT} > t^\textsf{ALG}$. This also must mean that $A^\textsf{OPT}$ and $A^\textsf{ALG}$ are differnt from each other. However, they respect the same ordering, so we can find the *first* index where they differ - let $i$ be that index. Again, this means that $a^\textsf{OPT}_i \neq a^\textsf{ALG}_i$.
+Now, assume for the sake of contradiction that $t^\textsf{OPT}$ is different from $t^\textsf{ALG}$. Since $\textsf{OPT}$ is the optimal solution, it must be that $t^\textsf{OPT} > t^\textsf{ALG}$. This also must mean that $A^\textsf{OPT}$ and $A^\textsf{ALG}$ are different from each other. However, they respect the same ordering, so we can find the *first* index where they differ - let $i$ be that index. Again, this means that $a^\textsf{OPT}_i \neq a^\textsf{ALG}_i$.
 
 Note that to get to index $i$, $\textsf{ALG}$ must have taken as much as it could from indices $1,\dotsc,i-1$, and so did $\textsf{OPT}$. By the greedy rule, $\textsf{ALG}$ must have also taken as much as it could of index $i$. Since $a^\textsf{OPT}_i \neq a^\textsf{ALG}_i$, it must be that $a^\textsf{OPT}_i < a^\textsf{ALG}_i$. 
 
