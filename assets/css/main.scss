@@ -1,5 +1,17 @@
 ---
 ---
+@font-face {
+  font-family: "Computer Modern Sans";
+  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
+}
+
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunrm.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 
 $sans-serif-font-family: "Quattrocento Sans", sans-serif;
 $serif-font-family:      "PT Serif", Georgia, "Times New Roman", serif;
