@@ -85,7 +85,7 @@ We're super close - we need one more core claim.
 
 $$a^\textsf{SOL}_iv_i.$$
 
-Now, we take out a small chunk $0 \leq \varepsilon \leq a^\textsf{SOL}_i$ out of $b_i$ and replace it with a bean $b_j$ with value $v_j < v_i$. Then the total cost contribution will be
+Now, we take out a small chunk $0 < \varepsilon \leq a^\textsf{SOL}_i$ out of $b_i$ and replace it with a bean $b_j$ with value $v_j < v_i$. Then the total cost contribution will be
 
 $$(a^\textsf{SOL}_i - \varepsilon) v_i + \varepsilon v_j.$$
 
