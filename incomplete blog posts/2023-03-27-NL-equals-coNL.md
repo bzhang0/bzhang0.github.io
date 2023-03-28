@@ -16,7 +16,7 @@ $$f(x) = 1 \Leftrightarrow \exists w \in \{0, 1\}^{p(|x|)} \text{ s.t. } M(x, w)
 
 where $M$ has read-once access to $w$.
 
-In this blog post, we will first show that $\PATH$ is in $\NL$ and is $\NLC$. Then we show that $\overline{\PATH}$ is in $\coNL$ and in $\NL$, which thereby shows that $\NL = \coNL$.
+In this blog post, we will first show that $\PATH$ is in $\NL$ and is $\NLC$. Then we show that $\overline{\PATH}$ is also in $\NL$, which thereby shows that $\NL = \coNL$.
 
 
 ## $\PATH$ is in $\NL$.
