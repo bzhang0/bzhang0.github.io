@@ -142,9 +142,9 @@ Note that to get to index $i$, $\textsf{ALG}$ must have taken as much as it coul
 
 Because $\textsf{ALG}$ and $\textsf{OPT}$ take the same weight by **Claim 2**, and they differ at the $i^\text{th}$ index, there must be some index $j > i$ further on, where $a^\textsf{OPT}_j > a^\textsf{ALG}_j$. Note that the value of the $j^\text{th}$ bean is strictly less than the value of the $i^\text{th}$ bean.
 
-We proceed to construct a new solution $\textsf{OPT'}$ where all weights are the same except at index $i$ and $j$, i.e., $a^\textsf{OPT'}_k = a^\textsf{OPT}_k$ for all $k \neq i,j$.
+We proceed to construct a new solution $\textsf{OPT}'$ where all weights are the same except at index $i$ and $j$, i.e., $a^{\textsf{OPT}'}_k = a^\textsf{OPT}_k$ for all $k \neq i,j$.
 
-For $i$ and $j$, take a small weight $\varepsilon > 0$ out of bean $j$ and add it to bean $i$ (this is possible because $a^\textsf{OPT}_i < a^\textsf{ALG}_i \leq s_i$). This gives us $a^\textsf{OPT'}_i = a^\textsf{OPT}_i + \varepsilon$ and $a^\textsf{OPT'}_j = a^\textsf{OPT}_j - \varepsilon$. The weight has not changed, but the total cost strictly increases by **Claim 3** (since $v_i > v_j$). We can go in-depth to see why this inequality holds:
+For $i$ and $j$, take a small weight $\varepsilon > 0$ out of bean $j$ and add it to bean $i$ (this is possible because $a^\textsf{OPT}_i < a^\textsf{ALG}_i \leq s_i$). This gives us $a^{\textsf{OPT}'}_i = a^\textsf{OPT}_i + \varepsilon$ and $a^{\textsf{OPT}'}_j = a^\textsf{OPT}_j - \varepsilon$. The weight has not changed, but the total cost strictly increases by **Claim 3** (since $v_i > v_j$). We can go in-depth to see why this inequality holds:
 
 $$\begin{aligned}
 xv_i &> xv_j \\
@@ -156,7 +156,7 @@ a^{\textsf{OPT}'}_iv_i + a^{\textsf{OPT}'}_jv_j &> a^{\textsf{OPT}}_iv_i + a^{\t
 t^{\textsf{OPT}'} &> t^{\textsf{OPT}}
 \end{aligned}$$
 
-In fact, this shows that $\textsf{OPT'}$ is strictly better than $\textsf{OPT}$, a contradiction! Therefore, $t^\textsf{OPT} = t^\textsf{ALG}$, and thus $\textsf{ALG}$ is $\textsf{OPT}$. $\blacksquare$
+In fact, this shows that $\textsf{OPT}'$ is strictly better than $\textsf{OPT}$, a contradiction! Therefore, $t^\textsf{OPT} = t^\textsf{ALG}$, and thus $\textsf{ALG}$ is $\textsf{OPT}$. $\blacksquare$
 
 
 ## Conclusion

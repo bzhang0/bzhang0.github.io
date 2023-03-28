@@ -74,8 +74,12 @@ window.MathJax = {
       Q: "\\mathbb{Q}",
       C: "\\mathbb{C}",
 
+      // runtime
+      bigOh: "\\mathcal{O}",
+
       // omitting complexity classes
       NL: "\\mathbf{NL}",
+      NLC: "\\mathbf{NL}\\text{-complete}",
       coNL: "\\mathbf{coNL}",
 
       // complexity problems
@@ -93,6 +97,8 @@ window.MathJax = {
       // computational time
       DTIME: "\\mathsf{DTIME}",
       DSPACE: "\\mathsf{DSPACE}",
+      NTIME: "\\mathsf{NTIME}",
+      NSPACE: "\\mathsf{NSPACE}",
 
       // formatting
       parens: ["\\left( #1 \\right)", 1],
