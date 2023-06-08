@@ -69,7 +69,7 @@ The following theorem was shown by Immerman-Szlepcsenyi. Consider the complement
 
 $$ \overline{\PATH}(G, s, t) = \begin{cases} 1 & \text{if there does not exist a path from $s$ to $t$ in $G$} \\ 0 & \text{otherwise} \end{cases}$$
 
-
+(still a work in progress - to be continued soon!)
 
 
 <!-- https://www.cs.umd.edu/~jkatz/complexity/f11/all.pdf -->
