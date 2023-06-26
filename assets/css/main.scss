@@ -1,20 +1,28 @@
 ---
 ---
-@font-face {
-  font-family: "Computer Modern Sans";
-  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
-}
+// @font-face {
+//   font-family: "Computer Modern Sans";
+//   src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
+// }
+
+// @font-face {
+//   font-family: "Computer Modern Serif";
+//   src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunrm.otf');
+// }
+
+// @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 @font-face {
-  font-family: "Computer Modern Serif";
-  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunrm.otf');
+  font-family: 'Palatino';
+  src: url('https://fonts.googleapis.com/css?family=Palatino') format('truetype');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
-$sans-serif-font-family: "Quattrocento Sans", sans-serif;
-$serif-font-family:      "PT Serif", Georgia, "Times New Roman", serif;
+$sans-serif-font-family: "Quattrocento Sans", sans-serif; // for titles (?)
+// $sans-serif-font-family: "Gill Sans","Gill Sans MT","Lato",Calibri,sans-serif;
+// $serif-font-family:      "IBM Plex Sans", -apple-system,BlinkMacSystemFont, "Segoe UI",sans-serif; // for standard text
+$serif-font-family:      et-bembo, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+// $serif-font-family:      Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 $code-font-family:       "Source Code Pro", monospace;
 
 $body-color:             #505050;

@@ -4,4 +4,50 @@ title: academics
 permalink: /academics
 ---
 
-To be updated!
+Below are all of the classes I have taken in my academic career.
+- *Autumn 2023 (Planned)*
+  - CSE 521: Design and Analysis of Algorithms I
+  - MATH 327: Introduction to Real Analysis
+  - JAPAN 101: First-Year Japanese
+- Spring 2023
+  - CSE 526: Graduate Cryptography
+  - CSE 493Q: Introduction to Quantum Computing
+  - MATH 403: Introduction to Modern Algebra II
+- Winter 2023
+  - CSE 431: Introduction to Theory of Computation
+  - CSE 421: Introduction to Algorithms
+  - MATH 402: Introduction to Modern Algebra I
+- Autumn 2022
+  - CSE 446: Machine Learning
+  - CSE 440: Introduction to HCI
+  - MATH 207: Introduction to Differential Equations
+- Spring 2022
+  - CSE 452: Distributed Systems
+  - MATH 318: Advanced Linear Algebra Tools & Applications
+  - ESS 102: Space and Space Travel
+- Winter 2022
+  - CSE 344: Introduction to Data Management
+  - MUSIC 162: American Popular Song
+  - CHEM 142: General Chemistry I
+- Autumn 2021
+  - CSE 341: Programming Languages
+  - CSE 312: Foundations of Computing II
+  - ENGL 242: Reading Prose Fiction
+- Summer 2021
+  - CSE 332: Data Structures and Parallelism
+  - CSE 154: Web Programming
+- Spring 2021
+  - CSE 333: Systems Programming
+  - CSE 311: Foundations of Computing I
+  - MATH 308: Matrix Algebra with Applications
+  - PSYCH 210: The Diversity of Human Sexuality
+- Winter 2021
+  - CSE 331: Software Design and Implementation
+  - MATH 126: Calculus with Analytic Geometry III
+  - ENGL 182: Multimodal Composition
+- Autumn 2020
+  - CSE 351: The Hardware/Software Interface
+  - CSE 391: System and Software Tools
+  - CSE 190B: Current Topics in CSE
+  - MATH 125: Calculus with Analytic Geometry II
+  - PSYCH 101: Introduction to Psychology

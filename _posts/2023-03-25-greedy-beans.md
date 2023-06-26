@@ -41,10 +41,10 @@ It's important to understand that the problem wants us to find the highest cost 
 **Definition.** The ***value*** of a bean is its cost per pound, or the ratio of its cost per gallon to its weight per gallon. Formally, this is
 
 $$  v_i = \frac{c_i}{w_i}. $$
-<br><br/>
+
 Now, we can refine our greedy idea.
 
-**Key Idea:** Sort by $v_i$ in descending order (breaking ties by smallest index to give some sort of determinism), then take as much as you can of each bean.
+**Key idea:** Sort by $v_i$ in descending order (breaking ties by smallest index to give some sort of determinism), then take as much as you can of each bean.
 
 
 ## Formal proof
@@ -69,7 +69,7 @@ In this case, it's possible that $v_i = v_j$ for $i < j$. However, combining bea
 <br/><br/>
 **Claim 1.** *As long as the cumulative weight taken is the same, any weight selection of beans with the same value does not generate a unique solution.*
 
-*Proof.* Suppose we have two arbitrary beans, $b_i, b_j$ with the same value $v$. Let $a_i, a_j$ be the weight taken of each bean in the solution. Then the cost contribution of these two beans is $v \cdot a_i + v \cdot a_j = v(a_i + a_j)$. Since addition is commutative, we could just as easily reassign the amounts to either of $i,j$, subject to their respective supplies. As long as the cumulative weight $a_i + a_j$ stays the same, the cost contribution will stay the same. This construction can be applied recursively to any beans with the same value. We can then see that switching around weights of beans with the same value will not generate a "unique" solution (in terms of total cost combination). $\blacksquare$
+*Proof.* Suppose we have two arbitrary beans, $b_i, b_j$ with the same value $v$. Let $a_i, a_j$ be the weight taken of each bean in the solution. Then the cost contribution of these two beans is $v \cdot a_i + v \cdot a_j = v(a_i + a_j)$. Since addition is commutative, we could just as easily reassign the amounts to either of $i,j$, subject to their respective supplies. As long as the cumulative weight $a_i + a_j$ stays the same, the cost contribution will stay the same. This construction can be applied recursively to any beans with the same value. We can then see that switching around weights of beans with the same value will not generate a "unique" solution (in terms of total cost combination). $\square$
 <br/><br/>
 Great! We can now assume that beans of the same value can be "combined" to create a **big bean**. To not get messy with notation, let's just assume that $B$ and $B'$ are the "compressed" versions of the original set of beans.
 
@@ -79,7 +79,7 @@ Now, it's important to show that our algorithm $\textsf{ALG}$ and the optimal so
 
 *Proof.* For $\textsf{OPT}$, this is pretty trivial to see. If $\textsf{OPT}$ didn't take $m$ pounds, and instead took $m' < m$ pounds, then a new solution with $m' + \varepsilon$ pounds (for $\varepsilon > 0$) would have a higher cost combination (we know there is still more to take because $m'$ is strictly less than $m$). However, this is impossible, so $\textsf{OPT}$ must take $m$ pounds.
 
-For $\textsf{ALG}$, we can use the same idea. Our greedy rule said to take as much as we can. This means that $\textsf{ALG}$ will continuously take from the remaining supply until we either hit the maximum weight $b$ or there are no more beans left to take, whichever comes first. By definition, this is exactly $m$ pounds. $\blacksquare$
+For $\textsf{ALG}$, we can use the same idea. Our greedy rule said to take as much as we can. This means that $\textsf{ALG}$ will continuously take from the remaining supply until we either hit the maximum weight $b$ or there are no more beans left to take, whichever comes first. By definition, this is exactly $m$ pounds. $\square$
 <br/><br/>
 We're super close - we need one more core claim.
 <br/><br/>
@@ -108,7 +108,7 @@ Applying the same construction for a bean $b_h$ with value $v_h > v_i$, we get
 
 $$ \varepsilon v_h + (a^\textsf{SOL}_i - \varepsilon)v_i > a^\textsf{SOL}_iv_i,$$
 
-which means that higher-valued beans **can** increase the total cost contribution while keeping the total weight the same, as desired. Again, this applies to any sequence of beans with values all greater than $v_i$. $\blacksquare$
+which means that higher-valued beans **can** increase the total cost contribution while keeping the total weight the same, as desired. Again, this applies to any sequence of beans with values all greater than $v_i$. $\square$
 <br><br/>
 We've set everything up now! Let's prove correctness.
 
@@ -127,7 +127,7 @@ Let $x$ be the combined weight of all the beans up to (but not including) the $i
 
 $$ x = \sum_{j=1}^{i-1} a^\textsf{ALG}_j = \sum_{j=1}^{i-1} a^\textsf{OPT}_j.$$
 
-Note that up to and *including* the $i^\text{th}$ index, $\textsf{ALG}$ actually has a strictly greater cost contribution than $\textsf{OPT}$. At the $i^\text{th}$ index, both $\textsf{ALG}$ and $\textsf{OPT}$ have $m - x$ pounds left to process, by **Claim 2**. However, $\textsf{OPT}$ must now make up for the fact that it didn't take as much as it could at the $i^\text{th}$ index. By **Claim 3**, the only way $\textsf{OPT}$ to "make up" for the lesser cost contribution is to substitute a higher valued bean. However, every bean of greater value has no more supply! But then $t^\textsf{OPT}$ must be strictly less than $t^\textsf{ALG}$, a contradiction! Therefore, $t^\textsf{OPT} = t^\textsf{ALG}$, and thus $\textsf{ALG}$ is $\textsf{OPT}$. $\blacksquare$
+Note that up to and *including* the $i^\text{th}$ index, $\textsf{ALG}$ actually has a strictly greater cost contribution than $\textsf{OPT}$. At the $i^\text{th}$ index, both $\textsf{ALG}$ and $\textsf{OPT}$ have $m - x$ pounds left to process, by **Claim 2**. However, $\textsf{OPT}$ must now make up for the fact that it didn't take as much as it could at the $i^\text{th}$ index. By **Claim 3**, the only way $\textsf{OPT}$ to "make up" for the lesser cost contribution is to substitute a higher valued bean. However, every bean of greater value has no more supply! But then $t^\textsf{OPT}$ must be strictly less than $t^\textsf{ALG}$, a contradiction! Therefore, $t^\textsf{OPT} = t^\textsf{ALG}$, and thus $\textsf{ALG}$ is $\textsf{OPT}$. $\square$
 
 
 ## Alternate correctness proof

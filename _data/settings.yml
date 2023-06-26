@@ -7,17 +7,17 @@ disqus:
 google-ID: ''
 
 menu:
-- {name: 'Academics', url: 'academics.html'}
-- {name: 'Projects', url: 'projects.html'}
-- {name: 'Blog',   url: 'blog.html'}
-- {name: 'Contact', url: 'contact.html'}
+- {name: 'academics', url: 'academics.html'}
+- {name: 'projects', url: 'projects.html'}
+- {name: 'blog',   url: 'blog.html'}
+- {name: 'contact', url: 'contact.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
 - {icon: 'github',     link: 'https://www.github.com/bzhang0'}
 - {icon: 'twitter',    link: 'https://twitter.com/bzhang0'}
 - {icon: 'linkedin',   link: 'http://www.linkedin.com/in/bzhang0/'}
-- {icon: 'envelope',   link: 'mailto:bzhang0@uw.edu'}
+- {icon: 'envelope',   link: 'mailto:bzhang0@cs.washington.edu'}
 - {icon: 'rss-square', link: '/feed.xml'}
 # - {icon: 'rss-square', link: '/rss-feed.xml'}
 
