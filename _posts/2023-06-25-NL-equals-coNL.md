@@ -142,7 +142,9 @@ We are now able to prove the main theorem.
 
 ## Conclusion
 
-We have thereby shown that $\NL = \coNL$. This is quite interesting as we have no current way to find a tighter relationship between time complexity classes, but here we have exactly shown that $\NL = \coNL$, or a more general statement, 
+Why does showing $\overline{\PATH} \in \NL$ indicate that $\NL = \coNL$? Well, one fact is that if a function $f \in \NL$, then its complement $\overline{f} \in \coNL$, and vice versa. Since $\PATH \in NL$, we have $\overline{\PATH} \in \coNL$. Since $\overline{\PATH} \in \NL$ as well, we can say $\PATH \in \coNL$. Since $\PATH$ is $\NLC$, any function $f$ in $\NL$ is also in $\coNL$ as well.
+
+This is quite interesting as we have no current way to find a tighter relationship between time complexity classes, but here we have exactly shown that $\NL = \coNL$, or a more general statement, 
 
 $$\textrm{nspace}(s(n)) = \text{co-}\textrm{nspace}(s(n)) \;,$$
 
