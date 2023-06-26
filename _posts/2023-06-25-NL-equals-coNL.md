@@ -113,7 +113,7 @@ $(\Leftarrow)$ Suppose there is a path from $a$ to $v$ of length $i$. Then, at s
 Similar to **Claim 1**, we only need $\bigOh(s(n))$ space to keep track of the counter, previous vertex, and current vertex. This is logarithmic with respect to the graph size. $\square$
 <hr>
 
-The main question is. How can we get $c_{i-1}$. We can use the following claim.
+The main question is: how can we get $c_{i-1}$ in logarithmic space? We can use the following claim.
 
 <hr>
 
